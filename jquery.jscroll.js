@@ -124,8 +124,8 @@
                         _observe();
                     }
                     //_$scroll.unbind('.jscroll').bind('scroll.jscroll', function() {
-                    /* THE LINE ABOVE (126), DISABLES ALL jscroll EVENTS FOR DIVS AND BINDS .jscroll EVENT FOR WINDOW SCROLL. BECAUSE OF THAT "INFINITE AJAX SCROLLING" WORKS ONLY FOR LAST ELEMENT. FOR MULTIPLE COLUMNS IT DOESN'T WORK. 
-                    THE LINE BELOW (128) FIXES "INFINITE AJAX SCROLLING" MULTIPLE COLUMNS */
+                    /* THE LINE ABOVE (126), DISABLES ALL .jscroll EVENTS FOR DIVS AND BINDS .jscroll EVENT FOR WINDOW SCROLL. BECAUSE OF THAT "INFINITE AJAX SCROLLING" WORKS ONLY FOR LAST ELEMENT. FOR MULTIPLE COLUMNS IT DOESN'T WORK. 
+                    THE LINE BELOW (128) FIXES "INFINITE AJAX SCROLLING" FOR MULTIPLE COLUMNS */
                     _$scroll.bind('scroll.jscroll', function() {
                         return _observe();
                     });
